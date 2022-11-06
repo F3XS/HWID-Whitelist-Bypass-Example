@@ -1,10 +1,6 @@
 Yes it's simple here is example
 
 ```
--- Script was made by M_gnet because he's goated and I was honestly too lazy to make my own
--- Show support https://www.roblox.com/users/332799932/profile
-
-
 local mag; mag = hookfunction(game.HttpGet, function(self, url, ...)
     if url:find("aimstudio") then
         local old = url:split("user=")
