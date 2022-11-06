@@ -1,27 +1,17 @@
-<img src="icon.png" align="right" />
+Yes it's simple here is example
 
-# Violen-Hub [![Violen](https://media.discordapp.net/attachments/1021057353073840140/1025879447154470943/Violen_Hub.png?width=201&height=34)](https://www.youtube.com/channel/UCQT6KNQY-psQmyiRCoYu2SQ)
-> Violen Hub is a free hub
-
-### Background: 
-Violen-Hub was created on Sept 4 It was created by Hippoppo#0001, Violen-Hub Is a Paid and free scripts
-
-### Supported Games:
-- Kentucky - Released | Paid
-- Tower Of Hell - In dev | Free
-- Hoopz - In dev | Paid - Free
-- Universal Script | Free
+```
+-- Script was made by M_gnet because he's goated and I was honestly too lazy to make my own
+-- Show support https://www.roblox.com/users/332799932/profile
 
 
-### Why to chose Violen hub?
-> Violen hub is an  hub where you scripts are paid and free. we provide HWID Whitelist for paid users for better experience and less skiddies
-This hub It has alot of features to use on.
+local mag; mag = hookfunction(game.HttpGet, function(self, url, ...)
+    if url:find("aimstudio") then
+        local old = url:split("user=")
+        local new = old[1] .. "1" .. "&hwid=" .. "8cd08b2a05e9fd58352edaa5f1215162861211cf53054191d9fbb761b043391d9348a0541d01e7f66aab52291768d2ad07489fa3073a279cad360540a1681e76"
+        return mag(self, new, ...)
+    end
+    return mag(self, url, ...)
+end)
 
-## Payment Method:
-- Robux | Giftcard 10$
-- Robux Gamepass | 1143 Robux
-- Discord Nitro | 10$ Classic
-
-### How to buy Violen hub?:
-- DM: Hippoppo#0001
-- No discord server I am still making it
+loadstring(game:HttpGet("https://raw.githubusercontent.com/F3XS/HWID-Whitelist-Bypass-Example/main/The%20Script%20I%20am%20about%20to%20Bypass"))()```
